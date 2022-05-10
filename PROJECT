@@ -1,0 +1,16 @@
+domain: tkircsi
+layout:
+- go.kubebuilder.io/v3
+projectName: it-works
+repo: tkircsi/it-works
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: tkircsi
+  group: webapp
+  kind: ItWorks
+  path: tkircsi/it-works/api/v1alpha1
+  version: v1alpha1
+version: "3"

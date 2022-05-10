@@ -1,0 +1,8 @@
+apiVersion: webapp.tkircsi/v1alpha1
+kind: ItWorks
+metadata:
+  name: itworks-sample
+spec:
+  replicas: 2
+  host: localhost
+  image: nginx:latest

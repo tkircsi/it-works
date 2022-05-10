@@ -1,0 +1,9 @@
+apiVersion: webapp.tkircsi/v1alpha1
+kind: ItWorks
+metadata:
+  name: it-works
+  namespace: default
+spec:
+  replicas: 2
+  host: it.works.io
+  image: nginx:latest
