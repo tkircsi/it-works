@@ -24,4 +24,7 @@ jobs:
 
       - name: Build and deploy
         run: |
+          go install sigs.k8s.io/controller-tools/cmd/controller-gen@v0.8.0
+          go install sigs.k8s.io/kustomize/kustomize/v3@v3.8.7
+          go install sigs.k8s.io/controller-runtime/tools/setup-envtest@latest
           make docker-build docker-push IMG=tkircsi/${{ github.repository }}:v0.0.1
